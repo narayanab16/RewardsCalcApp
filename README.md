@@ -1,6 +1,6 @@
 # RewardsCalcApp
 
-# Solution1 Analysis:
+# Solution steps
     Step1 : Java JDK 18 installed and java_home Setup done 
     Step2 : Maven Installed and  maven_home Setup done 
     step3 : to run test: cmd ---> mvn test 
