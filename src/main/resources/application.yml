@@ -1,0 +1,9 @@
+# Standard application.yml config
+debug: false
+# Application specific config data
+app:
+  calcConfigData:
+    perAge1: 2
+    spentOver1: 100
+    perAge2: 1
+    spentOver2: 50
