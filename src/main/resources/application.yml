@@ -7,3 +7,9 @@ app:
     spentOver1: 100
     perAge2: 1
     spentOver2: 50
+logging:
+  level:
+    #org:
+      #springframework: DEBUG
+    com:
+      narayana: DEBUG
