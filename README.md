@@ -4,9 +4,9 @@
 # Requirements
 
 
-        2 points spent over $100 plus 1 point spent over 50
+        2 points spent over $100 plus 1 point spent over $50
         Ex: $120 purchase = 2x$20 + 1x$50 = 90 points. -- this is perfect from requirement doc
-        Ex: $52.35 purchase to be calculated over $50 i.e 52.35-50 = 2.35 * 1 --> this is my assumption of logic- is that correct? there is no sample data
+        Ex: $52.35 purchase to be calculated over $50 i.e 52.35-50 = 2.35 * 1 --> this is my assumption of logic- is that correct - this is the logic i wrote? there is no sample data
         Ex: $52.35 purchase to be calculated over $50 i.e 50 * 1 --> this is another assumption of logic- is that correct? there is no sample data
 
 # Solution steps
