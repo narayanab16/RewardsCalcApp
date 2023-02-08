@@ -20,10 +20,14 @@ public class CustomerDB {
             Customer c2 = new Customer("Basetty", LocalDate.of(2022,1,1), 52.14 );
             Customer c3 = new Customer("Narayana", LocalDate.of(2022,1,2), 122.45 );
             Customer c4 = new Customer("Basetty", LocalDate.of(2022,1,2), 52.14 );
+            Customer c5 = new Customer("Narayana", LocalDate.of(2022,2,1), 122.45 );
+            Customer c6 = new Customer("Basetty", LocalDate.of(2022,2,1), 52.14 );
             customersList.add(c1);
             customersList.add(c2);
             customersList.add(c3);
             customersList.add(c4);
+            customersList.add(c5);
+            customersList.add(c6);
         }
         return customersList;
     }
