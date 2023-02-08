@@ -27,7 +27,6 @@ public class PointsCalcService {
         LOG.debug("app config map " + appConfigData.getCalcConfigData());
         LocalDate tmpDate = startDate.plusMonths(monthPeriod - 1);
         LocalDate endDate = YearMonth.of(tmpDate.getYear(), tmpDate.getMonth()).atEndOfMonth();
-        Double totalRewards = 0.0;
         Double spentOver1 = Double.valueOf(appConfigData.getCalcConfigData().get(AppConstants.SPEND_OVER1));
         Double spentOver2 = Double.valueOf(appConfigData.getCalcConfigData().get(AppConstants.SPEND_OVER2));
         List<Customer> customers = CustomerDB.getCustomers(startDate, endDate);
@@ -48,7 +47,7 @@ public class PointsCalcService {
                         totalRwds = totalRwds + calcRewards(cust.spendAmount(), spentOver1, spentOver2);
                         tmpMonthTotRwdsMap.put(monthKey, totalRwds);
                     } else {
-                        totalRwds = totalRwds + totalRwds + calcRewards(cust.spendAmount(), spentOver1, spentOver2);
+                        totalRwds = totalRwds + calcRewards(cust.spendAmount(), spentOver1, spentOver2);
                         tmpMonthTotRwdsMap.put(monthKey, totalRwds);
                     }
                     custMonthTotRwdsMap.put(cust.name(), tmpMonthTotRwdsMap);
