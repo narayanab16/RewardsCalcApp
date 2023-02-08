@@ -69,6 +69,8 @@ public class PointsCalcService {
             totalRewards = totalRewards + Double.valueOf(spentOver2 * appConfigData.getCalcConfigData().get(AppConstants.PER_AGE2));
         } else {
             if(spendAmount > spentOver2 && spendAmount < spentOver1) {
+                // TODO: Waiting for the logic correctness
+                //totalRewards = Double.valueOf(spentOver2 * appConfigData.getCalcConfigData().get(AppConstants.PER_AGE2));
                 totalRewards = (Math.ceil(spendAmount) - spentOver2) * appConfigData.getCalcConfigData().get(AppConstants.PER_AGE2);
             }
         }
